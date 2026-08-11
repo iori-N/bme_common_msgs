@@ -22,6 +22,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HPPOSLLH.msg"
   "msg/UTMHP.msg"
   "msg/GnssSolution.msg"
+  "msg/PowerLog.msg"
   DEPENDENCIES std_msgs builtin_interfaces
 )
 
