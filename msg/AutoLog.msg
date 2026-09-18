@@ -24,13 +24,14 @@ float64 ki
 float64 kd
 float64 kcte
 float64 look_ahead_dist
-float64 cte_control_dist
-float64 cte_limit
+float64 cte_i_active   # ILOS: CTE range within which the integral accumulates [m]
+float64 cte_i_limit    # ILOS: cross-track integral clamp [m*s]
+float64 cte_i_decay    # ILOS: per-cycle integral decay outside cte_i_active / during pivot
 
 float64 p_output
-float64 i_output
+float64 i_output   # ILOS integral contribution: Kcte * cte_integral [m]
 float64 d_output
-float64 cte_output
+float64 cte_output # ILOS-biased CTE used in the LOS bearing: CTE + i_output [m]
 float64 relative_bearing #[degree]
 float64 linear_x  # [meter/sec]
 float64 angular_z # [rad/sec]

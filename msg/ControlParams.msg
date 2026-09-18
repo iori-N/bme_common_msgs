@@ -6,7 +6,9 @@ float64 ki
 float64 kd
 float64 look_ahead
 float64 pivot_threshold
-float64 cte_threshold
+float64 cte_i_active   # ILOS: CTE range within which the integral accumulates [m]
+float64 cte_i_limit    # ILOS: cross-track integral clamp [m*s]
+float64 cte_i_decay    # ILOS: per-cycle integral decay outside cte_i_active / during pivot
 float64 wp_arrival_dist
 float64 wp_skip_dist
 
