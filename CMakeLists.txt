@@ -23,6 +23,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/UTMHP.msg"
   "msg/GnssSolution.msg"
   "msg/PowerLog.msg"
+  "msg/Ina228Measurement.msg"
+  "msg/PowerLoggerRaw.msg"
+  "msg/PowerLoggerSession.msg"
   DEPENDENCIES std_msgs builtin_interfaces
 )
 
